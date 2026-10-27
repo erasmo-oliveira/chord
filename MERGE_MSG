@@ -1,6 +1,0 @@
-Revert "Laboratorio Algoritmo Chord"
-
-This reverts commit 31b9dc4ed74253eca0f6a7b458aad791020faa87.
-
-# Conflicts:
-#	README.md
