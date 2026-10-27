@@ -38,7 +38,9 @@ Uma busca leva, em geral, `O(log N)` saltos, com `N` nós no sistema. A Figura 6
 
 ## Figura 6.2
 
-O anel da figura tem os nós 1, 4, 9, 11, 14, 18, 20, 21 e 28. As entradas 1 a 5 abaixo são `succ(p + 2^(i-1))`. O predecessor de cada nó é o último da lista circular: o de 1 é 28, o de 4 é 1, e assim por diante.
+![Anel Chord com identificadores de 0 a 31. Os nós 1, 4, 9, 11, 14, 18, 20, 21 e 28 estão preenchidos. A linha cheia busca a chave 26 desde o nó 1 até o nó 28. A linha tracejada busca a chave 12 desde o nó 28 até o nó 14. Ao lado de cada nó, a finger table FT[i] = succ(p + 2^(i−1)).](chord.png)
+
+O desenho acima é o anel da Figura 6.2. Os nós presentes são 1, 4, 9, 11, 14, 18, 20, 21 e 28. As entradas 1 a 5 da tabela abaixo, e das tabelas no desenho, são `succ(p + 2^(i-1))`. O predecessor de cada nó é o último da lista circular: o de 1 é 28, o de 4 é 1, e assim por diante.
 
 | Nó | 1 | 2 | 3 | 4 | 5 |
 | --- | --- | --- | --- | --- | --- |
